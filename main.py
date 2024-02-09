@@ -30,3 +30,22 @@
 название книги, год выпуска, издателя, жанр, автора, цену
 Реализуйте конструктор по умолчанию и метод для вывода данных
 """
+class book:
+    def __init__(self, name: str, year: int, copyright: str, genre: str, autor: str, price: int):
+        self.name = name
+        self.year = year
+        self.copyright = copyright
+        self.genre = genre
+        self.autor = autor
+        self.price = price
+
+    def __str__(self):
+        return (f'Название книги: {self.name}\n'
+                f' Год выпуска: {self.year}\n'
+                f' Издатель: {self.copyright}\n'
+                f' Жанр: {self.genre} \n'
+                f'Автор: {self.autor} \n'
+                f'Цена книги: {self.price}')
+book_1 = book('Властелин колец', 2002, 'ООО Печать', 'Fantasy', 'R.R.Tolkin', 99 )
+print(book_1)
+
